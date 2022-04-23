@@ -4,6 +4,7 @@ body{
     align-items: center; 
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    /* writing-mode: tb-rl; */
 }
 
 .urna{
@@ -99,3 +100,344 @@ body{
   border-top: 2px solid #000; 
   padding-left: 10px;
 }
+
+
+/* laravel ticktes */
+
+.all-tickets-area{
+    margin-top: 60px;
+}
+
+
+
+.flex-baner{
+    
+    /* background-image: url('https://esic.sitespublicos.com.br/capa.jpg'); */
+
+  /* background-color: #cccccc; */
+  /* height: 100px; */
+ 
+  /* position: absolute; */
+}
+.ticket-box .title-text{
+    margin-top: 140px;
+}
+.title-text h3{
+    color: #018b36;
+    text-align: center;
+    margin: 50px 0;
+    margin-top: 20px;
+}
+.greem{ color: #018b36;}
+.filtro{display: flex; justify-content: flex-end; margin: 10px 0;}
+.counts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    height: 50px;
+}
+
+/* table */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+
+        @page {            
+            size: auto;   /* auto is the initial value */
+            margin: 0mm;  /*margin: 70px 0;  this affects the margin in the printer settings */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .app_main {
+            width: 80%;
+            margin: 100px auto;
+        }
+
+        .header {
+            position: fixed;
+            top: -10px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            
+            
+            height: 110px;
+        }
+
+        .header img {
+            text-align: center;
+            display: block;
+    max-width: 100%;
+    height: auto;
+          
+        }
+
+        body {
+            padding: 30px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .table {
+            border-collapse: collapse;
+        }
+
+        .thead tr {
+            background: #0088cc;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px auto;
+        }
+
+        .thead th {
+            padding: 10px auto;
+            font-size: 1.2em;
+            padding: 5px;
+        }
+
+        tfoot {
+            border-bottom: 0;
+        }
+        .app_launch_item {
+            align-items: center;
+            padding: 0;
+            color: #1D2025;
+        }
+
+        tbody > tr:nth-child(2n+1) {
+            background-color: rgba(0, 0, 0, 0.09);
+        }
+
+        .app_launch_item td {
+            padding: 5px;
+            border-bottom: 1px solid #2D4051;
+        }
+
+        .footer {
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .app_footer {
+            position: fixed;           
+            bottom: -6px;
+            width: 100%;
+            display: inline-block;
+            padding: 5px 10px 10px 10px;
+            background-color: #e8be48;
+            left: 0;
+            right: 0;
+            font-size: 14px;
+        }
+
+        .rodape{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+.app_footer img{
+margin: 3px 0;
+} 
+
+/*FORM*/
+
+.app_form{
+    display: flex;
+}
+.app_form .label {
+    display: flex;
+    width: 100%;
+    margin: 0 5px;
+    /* margin-bottom: 20px; */
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.app_form .legend {
+    display: block;
+    margin-bottom: 10px;
+    /* font-size: var(--font-small);
+    font-weight: var(--weight-strong); */
+    color: #888888;
+}
+
+.app_form input {
+    display: block;
+    width: 100%;
+    color: #000000;
+    
+    padding: 10px;
+    background: #ffffff;
+ 
+    border-radius:6px
+    
+    }
+    .app_form button {width: 80%;padding:10px;border-radius:6px}
+
+
+.app_form input[type="date"] {
+    -webkit-appearance: none;
+    font-size: 1em !important;
+    font-family: "Open Sans", serif !important;
+    padding: 7px 10px !important;
+    cursor: pointer;
+    /* font-weight: var(--font-normal); */
+    color: #888888;
+}
+
+.app_form .btn {
+    font-size: var(--font-normal);
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+.app_form .label_group-3,
+.app_form .label_group {
+    display: flex;
+    width: 100%;
+   
+}
+.app_form .label_group-3{
+    justify-content: space-between;
+}
+
+.app_form .label_group label {
+    flex-basis: calc(50% - var(--area-small));
+}
+
+.app_form .label_group label:first-child {
+    margin-right: var(--area-normal);
+}
+.app_form .label_group-3 label{
+    flex-basis: calc(35% - 10px);
+}
+
+
+
+@media (min-width: 42em) {
+    .app_form .label_g2 {
+        display: flex;
+    }
+
+    .app_form .label_g2 .label {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .app_form .label_g2 .label:first-child {
+        margin-right: 20px;
+    }
+}
+
+.app_form_footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_form_footer .remove_link {
+    font-size: var(--font-small);
+    font-weight: var(--weight-bold);
+    color: var(--color-red);
+}
+
+.app_form_footer .remove_link:hover {
+    color: var(--hover-color-red);
+}
+
+/*SEARCH FORM*/
+.app_search_form {
+    display: flex;
+}
+
+.app_search_form input {
+    font-size: var(--font-min);
+    border: 1px solid #cccccc;
+    border-right: 0;
+    padding: 5px 10px;
+
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.app_search_form button {
+    font-size: var(--font-small);
+    padding: 5px 10px;
+    border: none;
+    border-left: 0;
+    background: var(--color-green);
+    color: #FFFFFF;
+    cursor: pointer;
+
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+    transition-duration: 0.2s;
+}
+
+.app_search_form button:hover {
+    background: var(--hover-color-green);
+}
+
+
+/*992w*/
+@media (max-width: 62em) {
+    .app_form .label_group-3{
+        flex-wrap: wrap;
+    }
+    .app_form .label_group-3 label{
+        flex-basis: 100%;
+        
+    }
+}
+@page { 
+    size: landscape;
+}
+@media print{
+    .app_form .label_group-3{
+        flex-wrap: nowrap;
+    }
+    .app_form .label_group-3 label{
+        display: none;
+        flex-basis: calc(35% - 10px);
+    }
+
+    .flex-baner{
+    
+        /* background-image: url('https://esic.sitespublicos.com.br/capa.jpg'); */
+    
+      /* background-color: #cccccc; */
+      height: 100px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      position: absolute;
+    }
+
+
+      .no-print {
+        display: none;
+      }
+    
+}
+
+
+
