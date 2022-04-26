@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">    
     
+    <link rel="stylesheet" media="print" href="print.css" />
     <title>Document</title>
     <style>
-        @media print{
-        .flex-baner{
-    
-    /* background-image: url('images/capa.jpg'); */
-
-  /* background-color: #cccccc; */
-  /* height: 50px; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* position: a; */
-}
-
-}
-.flex-baner img{
-    display: block;
-   
-    
-    
-}
-/* .header{
-    position: fixed;
-    top: -10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    height: 60px;
-}
-.header img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-} */
+        
 
 
 /* .flex-baner{https://esic.sitespublicos.com.br/assets/img/logo2.png
@@ -68,7 +36,7 @@
     
                     <div class="title-text">
     
-                        <h3>Sistema Eletrônico de Serviço de<br/>  Informação ao Cidadão - e-SIC</h3>
+                        <h3>Relatório de Chamados | e-SIC</h3>
     
                     </div>
 
@@ -77,17 +45,17 @@
                         <form action="" method="get" class="app_form">
                             <div class="label_group-3">
                                 <label class="label">
-                                    <span class="legend">DATA INICAL:</span>
+                                    <span class="legend">DATA INICAL:</span><br/>
                                     <input type="date" name="start_date"/>
                                 </label>
                                 
                                 <label class="label">
-                                    <span class="legend">DATA FIM:</span>
+                                    <span class="legend">DATA FIM:</span><br/>
                                     <input type="date" name="start_date"/>
                                 </label>
                             
-                                <label class="label">
-                                    <button type="submit" title="" >pesquisar</button>
+                                <label class="label lbtn">
+                                    <button class="btn btn-outline-success"  type="submit" title="" ><i class="fa fa-print" aria-hidden="true"></i>PESQUISAR</button>
                                 </label>
                             </div>
                             
@@ -105,18 +73,21 @@
                         </div>
                         <div class="counts">
                             <div class="count-1">
-                                total: (1)
+                                <h5>Total de chamados ()</h5> 
+                                <ul>
+                                    <li>total: (1)</li>
+                                </ul>
                             </div>
                             <div class="count-2">
-                                total: (2)
+                               
                             </div>
                         </div>
                         <div class="table-responsive">
-                            <table border="1" class="table table-hover  responsive-table">
+                            <table border="1" id="tbl1"  class="table table-hover  responsive-table">
 
-                                <thead>
+                                <thead class="thead">
             
-                                    <tr>
+                                    <tr class="vendorListHeading">
             
                                         <th>Protocolo</th>
             
@@ -143,18 +114,18 @@
                                     <tr>    
                                         
                                         <?php
-                                        /**
- * @param string|null $date
- * @param string $format
- * @return string  RETORNA O NOME DO MES POR EXTENSO: janeiro - ano, fevereiro - ano...
- */
-function date_month_name(?string $date, string $format = "%d/%b/%Y"): string
-{
-	setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
-	date_default_timezone_set('America/Sao_Paulo');
-	$date = (empty($date) ? "now" : $date);
-	return utf8_encode(strftime($format, strtotime($date)));
-}
+                                                                                    /**
+                                             * @param string|null $date
+                                             * @param string $format
+                                             * @return string  RETORNA O NOME DO MES POR EXTENSO: janeiro - ano, fevereiro - ano...
+                                             */
+                                            function date_month_name(?string $date, string $format = "%d/%b/%Y"): string
+                                            {
+                                                setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+                                                date_default_timezone_set('America/Sao_Paulo');
+                                                $date = (empty($date) ? "now" : $date);
+                                                return utf8_encode(strftime($format, strtotime($date)));
+                                            }
                                             //  date_default_timezone_set('America/Sao_Paulo');
                                         ?>
                                         <td colspan="7" class=" ">Relatório gerado em: <?= date_month_name("now"); ?> as <?= date('H:m a'); ?></td>
