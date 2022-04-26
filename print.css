@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+
+
+@page {            
+    size: auto;   /* auto is the initial value */
+    margin: 0mm;  /*margin: 70px 0;  this affects the margin in the printer settings */
+}
+
+@page { 
+    size: landscape;
+}
+@media print{
+    body {-webkit-print-color-adjust: exact!important;}
+    .app_form .label_group-3{
+        flex-wrap: nowrap;
+    }
+    .app_form .label_group-3 label{
+        display: none;
+        flex-basis: calc(35% - 10px);
+    }
+
+    .no-print {
+        display: none;
+    }
+
+    .thead > tr.vendorListHeading {
+        /* background: #c4d2e2; */
+        color: #4f5458;
+        background-color: #c4d2e2!important;        
+        
+    }
+    #tbl1 {background-color:#999!important;}    
+    
+}
+
