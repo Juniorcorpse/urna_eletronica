@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">    
+      
     
     <link rel="stylesheet" media="print" href="print.css" />
+    <link rel="stylesheet" href="style.css">  
     <title>Document</title>
     <style>
         
@@ -17,8 +18,9 @@
     margin-bottom: 30px;
 } https://esic.sitespublicos.com.br/capa.jpg*/
     </style>
+    
 </head>
-<body>
+<body class="Section1 tbl">
     <div class="header">
         
           <img  src="https://esic.sitespublicos.com.br/capa.jpg" class="flex-baner img-responsive" />
@@ -26,7 +28,6 @@
     </div>
 
     <div class="container all-tickets-area app_main">
-        
         
         <div class="ticket-area">
             
@@ -76,16 +77,20 @@
                                 <h5>Total de chamados ()</h5> 
                                 <ul>
                                     <li>total: (1)</li>
+                                    <li>total: (1)</li>
+                                    <li>total: (1)</li>
+                                    <li>total: (1)</li>
+                                    
                                 </ul>
                             </div>
                             <div class="count-2">
                                
                             </div>
                         </div>
-                        <div class="table-responsive">
-                            <table border="1" id="tbl1"  class="table table-hover  responsive-table">
+                        <div >
+                            <table  border="1"  class="table-jr table-hover responsive-table">
 
-                                <thead class="thead">
+                                <thead class="thead" style="display: table-header-group;">
             
                                     <tr class="vendorListHeading">
             
@@ -106,10 +111,256 @@
                                     </tr>
             
                                 </thead>
-                                <tbody>
+                                <tbody  style="break-inside: avoid;">
 
-                                </tbody>
-
+                                
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                            
+                         
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                
+                                
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                                <tr class="app_launch_item">
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>
+                                    </td>
+                                    <td class="desc app_invoice_link transition">
+                                        <a > &nbsp;description</a>    
+                                    </td>
+                                   
+                                </tr>
+                            </tbody>
                                 <tfoot class="footer">
                                     <tr>    
                                         
@@ -128,8 +379,8 @@
                                             }
                                             //  date_default_timezone_set('America/Sao_Paulo');
                                         ?>
-                                        <td colspan="7" class=" ">Relatório gerado em: <?= date_month_name("now"); ?> as <?= date('H:m a'); ?></td>
-                                    </tr>
+                                        <th colspan="7" class=" ">Relatório gerado em: <?= date_month_name("now"); ?> as <?= date('H:m a'); ?></th>
+                                        </tr>
                                 </tfoot>
 
                             </table>
