@@ -1,36 +1,433 @@
+body{
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+    line-height: 1.33
+    /* writing-mode: tb-rl; */
+}
+
+.urna{
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+.teclado{
+    margin-left: 30px;
+    background-color: #403a3a;    
+}
+
+.tecaldo--linha{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 320px;    
+}
+.teclado--botao{    
+    background-color: #000;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.number .teclado--botao{
+    width: 70px;
+    height: 40px;
+    flex-basis: calc(25.33% - 10px);
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.btn{font-size: 15px;color: #000;padding: 5px 8px;}
+.branco{
+    background-color: #fff;    
+}
+.corrige{
+    background-color: #f09446;    
+}
+
+.confirma{
+    background-color: #4bc079;  
+    height: 40px;  
+}
+
+.d-1{
+    display: flex;
+    flex: 1;
+    /* flex-direction: row;
+    justify-content: space-between; */
+}
+
+.d-1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.d-1-1,
+.d-1-2,
+.d-1-3{
+    height: 50px;
+    align-items: center;
+}
+
+.d-1-2{display: flex;justify-content: center;}
+.d-1-4{flex: 1; line-height: 30px;}
+
+.d-1-right{
+    width: 90px;
+}
+
+.d-2{
+  height: 50px;
+  font-size: 14px;
+  border-top: 2px solid #000; 
+  padding-left: 10px;
+}
+
+
+/* laravel ticktes */
+
+.all-tickets-area{
+    margin-top: 20px;
+}
+
+
+
+.flex-baner{
+    
+    /* background-image: url('https://esic.sitespublicos.com.br/capa.jpg'); */
+
+  /* background-color: #cccccc; */
+  /* height: 100px; */
+ 
+  /* position: absolute; */
+}
+.ticket-box .title-text{
+    margin-top: 80px;
+}
+.title-text h3{
+    color: #018b36;
+    text-align: center;
+    
+    margin-bottom: 15px;
+}
+.greem{ color: #018b36; padding: 10px 0;}
+.filtro{display: flex; justify-content: flex-end; margin: 10px 0;}
+.counts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 40px 0;
+    height: 50px;
+}
+.count-1 ul{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+/* table */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
 
-@page {            
-    size: auto;   /* auto is the initial value */
-    margin: 0mm;  /*margin: 70px 0;  this affects the margin in the printer settings */
-}
-
-@page { 
-    size: landscape;
-}
-@media print{
-    body {-webkit-print-color-adjust: exact!important;}
-    .app_form .label_group-3{
-        flex-wrap: nowrap;
-    }
-    .app_form .label_group-3 label{
-        display: none;
-        flex-basis: calc(35% - 10px);
-    }
-
-    .no-print {
-        display: none;
-    }
-
-    .thead > tr.vendorListHeading {
-        /* background: #c4d2e2; */
-        color: #4f5458;
-        background-color: #c4d2e2!important;        
         
-    }
-    #tbl1 {background-color:#999!important;}    
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.app_main {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    
+    
+    height: 100px;
+}
+
+.header img {
+    text-align: center;
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    width: 100%;
     
 }
 
+body {
+    padding: 30px;
+}
+
+table {
+    /* width: 70%; */
+    display: table;
+    margin: auto;
+    margin-bottom: 70px;
+    border-collapse:collapse;
+    
+}
+/* table-hover  responsive-table (bootstrap) */
+tr{display: table-row}
+tr > td{   
+    
+    page-break-inside: avoid !important;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 4px 0 4px 0;
+}
+
+.box-title .tbl{
+    padding: 10px 0;
+}
+
+.thead tr {
+    /* background: #f4f9ff; */    
+    background-color:  #f4f9ff !important;
+    -webkit-print-color-adjust: exact; 
+    color: #4f5458;
+    text-align: center;
+    padding: 10px auto;
+}
+
+.thead th {
+    padding: 10px auto;
+    font-size: 1.2em;
+    padding: 5px;
+}
+thead{display: table-header-group;}
+
+tfoot {
+    border-bottom: 0;
+}
+.app_launch_item {
+    align-items: center;
+    padding: 0;
+    color: #1D2025;
+}
+tbody{display: table-row-group;}
+tbody > tr:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+.app_launch_item td {
+    padding: 5px;
+    border-bottom: 1px solid #2D4051;
+}
+
+tfoot{display: table-footer-group;}
+.footer {
+    text-align: right;
+    padding-right: 10px;
+}
+td, th{display: table-cell}
+
+.app_footer {
+    position: fixed;           
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
+    background-color: #e8be48;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    margin-top: 50px !important;
+    z-index: 99;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app_footer img{
+margin: 3px 0;
+} 
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 100% !important;
+}
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+h2,
+h3 {
+    page-break-after: avoid;
+}
+.navbar {
+    display: none;
+}
+.btn > .caret,
+.dropup > .btn > .caret {
+    border-top-color: #000 !important;
+}
+.table td,
+.table th {
+    background-color: #fff !important;
+}
+
+/*FORM*/
+
+.app_form{
+    display: flex;
+}
+.app_form .label {
+    display: flex;
+    width: 100%;
+    margin: 0 5px;
+    /* margin-bottom: 20px; */
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.app_form .legend {
+    display: block;
+    margin-bottom: 10px;
+    /* font-size: var(--font-small);
+    font-weight: var(--weight-strong); */
+    color: #888888;
+}
+
+.app_form input {
+    display: block;
+    width: 100%;
+    color: #000000;
+
+    padding: 10px;
+    background: #ffffff;
+
+    border-radius:6px
+
+}
+.label.lbtn{
+    justify-content: flex-start;
+    margin-bottom: 6px;
+    
+    flex-basis: 20%;
+}
+.label button {padding:20px 10px;border-radius:6px; width: 40%;}
+
+
+.app_form input[type="date"] {
+    
+    font-size: 1em !important;
+    font-family: "Open Sans", serif !important;
+    padding: 7px 10px !important;
+    cursor: pointer;
+    /* font-weight: var(--font-normal); */
+    color: #888888;
+}
+
+.app_form .btn {
+    font-size: var(--font-normal);
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+.app_form .label_group-3,
+.app_form .label_group {
+    display: flex;
+    width: 100%;
+   
+}
+.app_form .label_group-3{
+    justify-content: space-between;
+}
+
+.app_form .label_group label {
+    flex-basis: calc(50% - var(--area-small));
+}
+
+.app_form .label_group label:first-child {
+    margin-right: var(--area-normal);
+}
+.app_form .label_group-3 label{
+    flex-basis: calc(35% - 10px);
+}
+
+
+
+@media (min-width: 42em) {
+    .app_form .label_g2 {
+        display: flex;
+    }
+
+    .app_form .label_g2 .label {
+        flex-basis: calc(50% - 10px);
+    }
+
+    .app_form .label_g2 .label:first-child {
+        margin-right: 20px;
+    }
+}
+
+.app_form_footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app_form_footer .remove_link {
+    font-size: var(--font-small);
+    font-weight: var(--weight-bold);
+    color: var(--color-red);
+}
+
+.app_form_footer .remove_link:hover {
+    color: var(--hover-color-red);
+}
+
+
+
+/*992w*/
+@media (max-width: 62em) {
+    .app_form .label_group-3{
+        flex-wrap: wrap;
+    }
+    .app_form .label_group-3 label{
+        flex-basis: 100%;
+        
+    }
+}
